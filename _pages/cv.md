@@ -5,7 +5,7 @@ permalink: /cv/
 ---
 ## Curriculum Vitae
 
-[Download my CV]({{ "/assets/Benjamin Okoronkwo Resume.pdf" | relative_url }}) in PDF format.
+Click [here]({{ "/assets/Benjamin Okoronkwo Resume.pdf" | relative_url }}) to download my resume as a PDF.
 
 **Contact Information:**  
 [bco26@cornell.edu](mailto:bco26@cornell.edu) | +1 (214) 206-5988 | [linkedin.com/in/benjamin-okoronkwo](https://www.linkedin.com/in/benjamin-okoronkwo/)
@@ -41,19 +41,19 @@ Mechanical Design, Product Development, Robotics, Manufacturing, Human-Centered 
 
 ### Projects
 
-[**BUDDY: A Personal Camera Robot**](https://tinyurl.com/buddy-project), Euless, TX  
+**BUDDY: A Personal Camera Robot**, Euless, TX  
 ***Product Design Intern*** | May 2025 – Present
 * Designed and developed programmable dual-axis camera rig (BUDDY) for precision cinematography
 * Engineered belt driven X and Z-axis motion and tilt mechanism in Fusion 360 and built motion control logic integrating stepper motors, power supply, and TMC2208 drivers with Arduino and Python
 * Simulated structural deflection and tolerance analysis of plastics within 0.75 mm and applied DFM/DFA knowledge
 
-[**CORNELL ENTERTAINMENT ENGINEERING AND DESIGN CLUB**](https://tinyurl.com/axolotl-animatronic), Ithaca, NY  
+**CORNELL ENTERTAINMENT ENGINEERING AND DESIGN CLUB**, Ithaca, NY  
 ***Mechanical Lead, Axolotl Animatronic/Robot*** | February 2025 – May 2025
 * Managed the fabrication of an interactive robot ensuring reliable user interaction while managing a $950 budget
 * Directed an 18-member mechanical team resulting in the design of 7 electromechanical subsystems
 * Collaborated with electrical and software teams to integrate motion control, sensors, and actuation
 
-[***Team Lead, Furniture 1: Furniture Racing***](https://tinyurl.com/furniture-one)| October 2024 – December 2024
+***Team Lead, Furniture 1: Furniture Racing***| October 2024 – December 2024
 * Designed the chassis and steering mechanism using finite element analysis in Fusion 360 and materials ranging from 2x3 plywood and aluminum bars to custom-made CAD parts
 * Oversaw a team of 7 students, delegated tasks accordingly and ensured adherence to the project timeline
 * Managed and optimized a project budget of $200 and organized build sessions with school staff
