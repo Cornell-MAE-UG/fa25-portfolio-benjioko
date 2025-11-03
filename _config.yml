@@ -13,7 +13,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : Benjamin Okoronkwo
 description              : Benjamin Okoronkwo - Projects and CV 
-baseurl                  : "fa25-portfolio-benjioko" # Set this to your repo name 
+baseurl                  : "/fa25-portfolio-benjioko" # Set this to "portfolio-<your-github-username>" 
+url                      : "https://cornell-mae-ug.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 
 # Theme and Style
 theme: jekyll-theme-minimal
