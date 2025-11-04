@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <Your Name> - Portfolio
+title: Benjamin Okoronkwo - Portfolio
 permalink: /projects/
 ---
 
@@ -8,7 +8,7 @@ permalink: /projects/
 <div class="project-gallery">
     {% for project in site.projects %}
       <div class="gallery-item">
-        <a href="{{ project.url | relative_url }}">
+        <a href="{{ project.redirect_to }}" target="_blank">
           <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" />
           <p>{{ project.title}}</p>
         </a>
