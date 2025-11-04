@@ -140,8 +140,8 @@ footer {
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
   padding: 20px;
   margin: 0 auto;
   max-width: 100%;
@@ -149,19 +149,32 @@ footer {
   a {
     text-decoration: none;
     color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
   p {
-    margin: 8px 0;
-    font-size: 1rem;
-    line-height: 1.2;
-    min-height: 2.4em;
+    margin: 12px 0;
+    padding: 0 10px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    min-height: 3em;
     text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
   }
 
   img {
     width: 100%;
-    height: 150px;
+    height: 180px;
     object-fit: cover;
     border-radius: 4px;
   }
