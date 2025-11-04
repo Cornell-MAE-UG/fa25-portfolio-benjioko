@@ -23,20 +23,20 @@ Bachelor of Science in Mechanical Engineering
 
 **TALLULAH FALLS SCHOOL**, Tallulah Falls, GA  
 High School Diploma
-*Graduation: [May, 2023]*
+*Graduation: May 2023*
 
 **Notable Coursework:**
 Statics and Mechanics of Solids, Mechanical Design, Thermodynamics, System Dynamics, Fluid Mechanics, Entrepreneurship for Engineers, Intro to Computing: An Engineering and Science Perspective
 
 ### Technical Skills & Interests
 
-**Technical Skills:**  
+**Technical Skills:**
 Fusion 360 (CAD & FEA), Python, MATLAB, Arduino (basic), 3D Printing, Machining Tools
 
-**Soft Skills:**  
+**Soft Skills:**
 Creativity, Problem-Solving, Leadership, Communication, Adaptability, Teamwork, Critical Thinking
 
-**Interests:**  
+**Interests:**
 Mechanical Design, Product Development, Robotics, Manufacturing, Human-Centered Design, Sustainable Design
 
 ### Projects
