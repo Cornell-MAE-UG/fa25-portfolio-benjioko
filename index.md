@@ -6,7 +6,7 @@ title: Benjamin Okoronkwo
 ## About Me
 
 
-![Profile Picture]({{ "assets/images/profile.jpg" | relative_url }}){: class="profile-image"}
+![Profile Picture]({{ "assets/images/profile.jpeg" | relative_url }}){: class="profile-image"}
 
 Hello, I’m Benjamin! I’m a third-year Mechanical Engineering student at Cornell University. I’m passionate about all things product design, creative engineering, management and making connections!
 
