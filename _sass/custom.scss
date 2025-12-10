@@ -343,4 +343,9 @@ img,
   margin: 0;
 }
 
+/* Ensure project-section blocks span the full width inside the project gallery grid */
+.project-gallery > .project-section {
+  grid-column: 1 / -1;
+}
+
 
