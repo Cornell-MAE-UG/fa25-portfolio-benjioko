@@ -324,26 +324,35 @@ img,
 .project-section {
   margin-bottom: 32px;
 }
-.project-section .gallery-item {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 16px;
-}
-.project-section .gallery-item img {
-  max-width: 200px;
-  width: auto;
-  margin-right: 12px;
-  vertical-align: middle;
-  display: inline-block;
-}
-.project-section .gallery-item p {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
+
+/* Per-section project list: stack items vertically and center them */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
 }
 
-/* Ensure project-section blocks span the full width inside the project gallery grid */
+.project-list .gallery-item {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 16px;
+}
+
+.project-list .gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 0 8px 0;
+  border-radius: 8px;
+}
+
+.project-list .gallery-item p {
+  margin: 0;
+  text-align: center;
+}
+
+/* keep an extra safety rule in case a project-section still ends up inside the grid */
 .project-gallery > .project-section {
   grid-column: 1 / -1;
 }
