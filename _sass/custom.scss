@@ -275,3 +275,23 @@ footer {
 }
 
 
+
+
+/* Make all images responsive and prevent them from overflowing their containers */
+img,
+.project-image,
+.project-item img,
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* Slightly constrain very large images inside project pages */
+.project-image {
+  max-width: 100%;
+  width: auto;
+}
+
+

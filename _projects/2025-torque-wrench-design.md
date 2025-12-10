@@ -15,28 +15,24 @@ As a final project for my Materials class, we were taksed with designing a torqu
 - Fatigue stress safety factor XS = 1.5. The wrench must sustain a fully reversed torque of T = ±600 in-lbf for 10^6 cycles.
 - Material must be a steel, aluminum, or titanium alloy.
 
-![Torque wrench sketch]({{ "/assets/images/materials_final/sketch.jpeg" | relative_url }})
+![Torque wrench sketch](assets/images/materials_final/sketch.jpeg)
 
 **Material Choice**
 The baseline material for the project was Steel M42 but we were given the choice to use aluminum, steel, or titanium. I agree with using a steel alloy due to aluminium having low strength and titanium being too costly. Steel M42 could satisfy the material choice for the project, but its high Young’s Modulus and Tensile Strength led to low strain output. Doing my research, I found that the material was too robust to use in a torque wrench and not the material used in industry. I chose to use Steel AISI 4140 oil quenched and tempered at 425 deg celsius due to its prevalence in tools similar to a torque wrench within the industry and the yield strength meeting my estimate of the applied load.
 
-<div class="image-row">
-	<img src="{{ "/assets/images/materials_final/cad1.png" | relative_url }}" alt="Torque wrench CAD" />
-	<img src="{{ "/assets/images/materials_final/matlab_output.png" | relative_url }}" alt="Torque wrench Dimension" />
-</div>
+![Torque wrench CAD](assets/images/materials_final/cad1.png)
+![Torque wrench Dimension](assets/images/materials_final/matlab_output.png)
 
 **Loads, Boundary Conditions, and Deflection Results**
 When simplifying the analysis, I modeled the system as a beam in a fixed-free condition with it being fixed at the drive and a load applied at its end. The displacements (or deflections) for the FEM and hand calculations are 0.3108 in and 0.2791 in respectively. Comparing the two, the hand calculations differ by 10.2% which is not too far from each other. The main reason for this, I believe, is the difference in the two systems.
 
 The hand calculations assume a different loading configuration that simply assumes a fixed-free configuration where the fixed end is completely fixed. While in the FEM, we only fix one of the drives (the top one) and not the one connected to the handle. The added 0.1 in of the drive would add onto the moment of inertia term used in the deflection calculations.
 
-<div class="image-row">
-	<img src="{{ "/assets/images/materials_final/fillet_BC.png" | relative_url }}" alt="Torque wrench BC" />
-	<img src="{{ "/assets/images/materials_final/fillet_deflection.png" | relative_url }}" alt="Torque wrench Deflection" />
-</div>
+![Torque wrench BC](assets/images/materials_final/fillet_BC.png)
+![Torque wrench Deflection](assets/images/materials_final/fillet_deflection.png)
 
 **Max Normal Stress Results**
-![Torque wrench Stress]({{ "/assets/images/materials_final/fillet_normalstress.png" | relative_url }})
+![Torque wrench Stress](assets/images/materials_final/fillet_normalstress.png)
 
 Max stress in the y-direction is 45.37 ksi, 12.9% larger than the max stress calculated by hand. This produces the following factors of safety (FOS):
 
@@ -51,7 +47,5 @@ The FOS requirement could be met by changing the geometry, and using a material 
 **Strain Gauge Results**
 The strain gauge results turned out to be exactly the same as what was calculated (1.2 mV/V), which was really good! Below is how the strain gauge was calculated. A half-bridge gauge with a gauge factor of two was used for simplicity. While a physical gauge wasn’t used in this project, I would pick ATO-SG350-3HA as its .38 x .26 in footprint would fit anywhere on my .45 x .45 in wrench.
 
-<div class="image-row">
-	<img src="{{ "/assets/images/materials_final/strain.png" | relative_url }}" alt="Torque wrench Strain" />
-	<img src="{{ "/assets/images/materials_final/strain_calcs.jpeg" | relative_url }}" alt="Torque wrench Gauge Calcs" />
-</div>
+![Torque wrench Strain](assets/images/materials_final/strain.png)
+![Torque wrench Gauge Calcs](assets/images/materials_final/strain_calcs.jpeg)
