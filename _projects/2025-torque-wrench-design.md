@@ -5,6 +5,7 @@ description: Mechanics of Materials Final Design Project iterating on and analyz
 technologies: [Ansys, MATLAB, Fusion 360]
 image: /assets/images/materials_final/fillet_deflection.png
 published: true
+project_type: school
 ---
 **The Prompt**
 As a final project for my Materials class, we were taksed with designing a torque wrench with the following dimensions under the following criteria:
@@ -20,16 +21,26 @@ As a final project for my Materials class, we were taksed with designing a torqu
 **Material Choice**
 The baseline material for the project was Steel M42 but we were given the choice to use aluminum, steel, or titanium. I agree with using a steel alloy due to aluminium having low strength and titanium being too costly. Steel M42 could satisfy the material choice for the project, but its high Young’s Modulus and Tensile Strength led to low strain output. Doing my research, I found that the material was too robust to use in a torque wrench and not the material used in industry. I chose to use Steel AISI 4140 oil quenched and tempered at 425 deg celsius due to its prevalence in tools similar to a torque wrench within the industry and the yield strength meeting my estimate of the applied load.
 
-![Torque wrench CAD]({{ "/assets/images/materials_final/cad1.png" | relative_url }})
-![Torque wrench Dimension]({{ "/assets/images/materials_final/matlab_output.png" | relative_url }})
+{% include image-row.html
+	img1="/assets/images/materials_final/cad1.png"
+	caption1="CAD view"
+	img2="/assets/images/materials_final/matlab_output.png"
+	caption2="Dimension output"
+	side_by_side="true"
+%}
 
 **Loads, Boundary Conditions, and Deflection Results**
 When simplifying the analysis, I modeled the system as a beam in a fixed-free condition with it being fixed at the drive and a load applied at its end. The displacements (or deflections) for the FEM and hand calculations are 0.3108 in and 0.2791 in respectively. Comparing the two, the hand calculations differ by 10.2% which is not too far from each other. The main reason for this, I believe, is the difference in the two systems.
 
 The hand calculations assume a different loading configuration that simply assumes a fixed-free configuration where the fixed end is completely fixed. While in the FEM, we only fix one of the drives (the top one) and not the one connected to the handle. The added 0.1 in of the drive would add onto the moment of inertia term used in the deflection calculations.
 
-![Torque wrench BC]({{ "/assets/images/materials_final/fillet_BC.png" | relative_url }})
-![Torque wrench Deflection]({{ "/assets/images/materials_final/fillet_deflection.png" | relative_url }})
+{% include image-row.html
+	img1="/assets/images/materials_final/fillet_BC.png"
+	caption1="Boundary conditions"
+	img2="/assets/images/materials_final/fillet_deflection.png"
+	caption2="FEM deflection"
+	side_by_side="true"
+%}
 
 **Max Normal Stress Results**
 ![Torque wrench Stress]({{ "/assets/images/materials_final/fillet_normalstress.png" | relative_url }})
@@ -47,5 +58,11 @@ The FOS requirement could be met by changing the geometry, and using a material 
 **Strain Gauge Results**
 The strain gauge results turned out to be exactly the same as what was calculated (1.2 mV/V), which was really good! Below is how the strain gauge was calculated. A half-bridge gauge with a gauge factor of two was used for simplicity. While a physical gauge wasn’t used in this project, I would pick ATO-SG350-3HA as its .38 x .26 in footprint would fit anywhere on my .45 x .45 in wrench.
 
-![Torque wrench Strain]({{ "/assets/images/materials_final/strain.png" | relative_url }})
-![Torque wrench Gauge Calcs]({{ "/assets/images/materials_final/strain_calcs.jpeg" | relative_url }})
+{% include image-row.html
+	img1="/assets/images/materials_final/strain.png"
+	caption1="Strain results"
+	img2="/assets/images/materials_final/strain_calcs.jpeg"
+	caption2="Gauge calculations"
+	side_by_side="true"
+	comment="Strain results match hand calculations (1.2 mV/V)."
+%}

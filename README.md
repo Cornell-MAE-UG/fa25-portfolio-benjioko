@@ -75,6 +75,37 @@ No need to keep the `< >` brackets. They are just there to indicate placeholders
 - The example project pages show you how to include code and images in the portfolio page.
 - Refer to the Jekyll Markdown documentation for other formatting tips
 
+### Project classification and image helpers
+
+You can classify projects as `school` or `personal` by adding a `project_type` value to the page front matter. Example:
+
+```yaml
+---
+title: My Project
+image: /assets/images/myproject.png
+project_type: school   # or personal
+---
+```
+
+The main projects page groups projects by `project_type` (School, Personal, Other). If a project doesn't have `project_type` set it will appear under "Other Projects".
+
+To control how images are laid out within a project page (side-by-side or stacked) use the provided include `_includes/image-row.html`.
+
+Usage example (two images side-by-side with captions and an optional comment):
+
+{% raw %}
+{% include image-row.html
+  img1="/assets/images/materials_final/cad1.png"
+  caption1="CAD view"
+  img2="/assets/images/materials_final/matlab_output.png"
+  caption2="Dimension output"
+  side_by_side="true"
+  comment="These two images show the CAD and measured dimensions."
+%}
+{% endraw %}
+
+The include accepts up to `img1..img4` and `caption1..caption4`. The `side_by_side` flag can be `true` or `false` and `comment` adds a small paragraph below the images.
+
 ### CV
 - `assets/CV.pdf`: Replace this placeholder with your own PDF CV.
 - You can either edit or delete the placeholder CV markdown text.

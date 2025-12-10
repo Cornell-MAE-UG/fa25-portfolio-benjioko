@@ -294,4 +294,30 @@ img,
   width: auto;
 }
 
+/* Styles for the new image include */
+.include-image-row {
+  margin: 18px 0;
+}
+.include-image-row .image-item {
+  margin: 0;
+}
+.include-image-row .image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(17,24,39,0.06);
+}
+.include-image-row figcaption {
+  font-size: 0.9rem;
+  color: $text-color;
+  margin-top: 8px;
+  text-align: center;
+}
+.image-comment {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: $text-color;
+  opacity: 0.9;
+}
+
 
