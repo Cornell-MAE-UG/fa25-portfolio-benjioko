@@ -320,4 +320,27 @@ img,
   opacity: 0.9;
 }
 
+/* Project section layout: list projects vertically under each heading */
+.project-section {
+  margin-bottom: 32px;
+}
+.project-section .gallery-item {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+.project-section .gallery-item img {
+  max-width: 200px;
+  width: auto;
+  margin-right: 12px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.project-section .gallery-item p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
 

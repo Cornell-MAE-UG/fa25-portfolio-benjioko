@@ -12,6 +12,7 @@ permalink: /projects/
 
     {% comment %} Personal projects {% endcomment %}
     {% assign printed = false %}
+    <div class="project-section personal-projects">
     {% for project in sorted_projects %}
       {% if project.project_type == "personal" %}
         {% unless printed %}
@@ -30,9 +31,11 @@ permalink: /projects/
         </div>
       {% endif %}
     {% endfor %}
+    </div>
 
     {% comment %} School projects {% endcomment %}
     {% assign printed = false %}
+    <div class="project-section school-projects">
     {% for project in sorted_projects %}
       {% if project.project_type == "school" %}
         {% unless printed %}
@@ -51,5 +54,6 @@ permalink: /projects/
         </div>
       {% endif %}
     {% endfor %}
+    </div>
 </div>
 </div>
