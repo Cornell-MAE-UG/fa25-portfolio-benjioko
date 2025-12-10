@@ -102,10 +102,51 @@ footer {
 }
 
 .project-image {
-  float: left;
-  margin: 20px 25px 25px 0;
-  max-width: 200px;
-  vertical-align: top;
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 320px;
+  width: 100%;
+}
+
+/* Project content container to scope image styles */
+.project-content {
+  clear: both;
+}
+
+/* Images inside project content: responsive and visually consistent */
+.project-content p img,
+.project-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 16px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Row wrapper to place images side-by-side on wider screens */
+.image-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+.image-row img {
+  flex: 1 1 calc(50% - 8px);
+  max-width: calc(50% - 8px);
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Desktop: float main project image to the left for a two-column feel */
+@media (min-width: 900px) {
+  .project-image {
+    float: left;
+    margin: 20px 25px 25px 0;
+    width: 260px;
+    max-width: 260px;
+  }
 }
 
 .inline-image {
