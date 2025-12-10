@@ -1,17 +1,8 @@
 {%- comment -%}
-Include to render 1–4 images either side-by-side or stacked.
+Simplified include: render up to 4 images stacked. Captions, side-by-side layout, and comments have been removed.
 
 Usage:
-{% raw %}{% include image-row.html
-   img1="/assets/images/..."
-   caption1="Caption for image 1"
-   img2="/assets/images/..."
-   caption2="Caption for image 2"
-   side_by_side="true"
-   comment="Optional comment or explanation"
-%}{% endraw %}
-
-Supported params: img1..img4, caption1..caption4, side_by_side (true/false), comment
+{% raw %}{% include image-row.html img1="/assets/images/..." img2="/assets/images/..." %}{% endraw %}
 {%- endcomment -%}
 
 {%- assign imgs = '' -%}
@@ -24,38 +15,12 @@ Supported params: img1..img4, caption1..caption4, side_by_side (true/false), com
 
 {%- assign img_keys = imgs | split: '|' -%}
 
-{%- if include.side_by_side == 'true' or include.side_by_side == true -%}
-  <div class="image-row include-image-row">
-    {%- for key in img_keys -%}
-      {%- if key != '' -%}
-        {%- assign idx = key | remove: 'img' -%}
-        <figure class="image-item">
-          <img src="{{ include[key] | relative_url }}" alt="{{ include['caption' | append: idx] | default: page.title }}" />
-          {%- assign cap = include['caption' | append: idx] -%}
-          {%- if cap -%}
-            <figcaption>{{ cap }}</figcaption>
-          {%- endif -%}
-        </figure>
-      {%- endif -%}
-    {%- endfor -%}
-  </div>
-{%- else -%}
-  <div class="stacked-images include-image-row">
-    {%- for key in img_keys -%}
-      {%- if key != '' -%}
-        {%- assign idx = key | remove: 'img' -%}
-        <figure class="image-item">
-          <img src="{{ include[key] | relative_url }}" alt="{{ include['caption' | append: idx] | default: page.title }}" />
-          {%- assign cap = include['caption' | append: idx] -%}
-          {%- if cap -%}
-            <figcaption>{{ cap }}</figcaption>
-          {%- endif -%}
-        </figure>
-      {%- endif -%}
-    {%- endfor -%}
-  </div>
-{%- endif -%}
-
-{%- if include.comment -%}
-  <p class="image-comment">{{ include.comment }}</p>
-{%- endif -%}
+<div class="include-image-row">
+  {%- for key in img_keys -%}
+    {%- if key != '' -%}
+      <figure class="image-item">
+        <img src="{{ include[key] | relative_url }}" alt="{{ page.title }}" />
+      </figure>
+    {%- endif -%}
+  {%- endfor -%}
+</div>

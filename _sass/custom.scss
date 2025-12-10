@@ -320,41 +320,9 @@ img,
   opacity: 0.9;
 }
 
-/* Project section layout: list projects vertically under each heading */
+/* Simple project-section placeholder (grouping removed) */
 .project-section {
   margin-bottom: 32px;
-}
-
-/* Per-section project list: stack items vertically and center them */
-.project-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: center;
-}
-
-.project-list .gallery-item {
-  width: 100%;
-  max-width: 640px;
-  margin: 0 auto 16px;
-}
-
-.project-list .gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 0 8px 0;
-  border-radius: 8px;
-}
-
-.project-list .gallery-item p {
-  margin: 0;
-  text-align: center;
-}
-
-/* keep an extra safety rule in case a project-section still ends up inside the grid */
-.project-gallery > .project-section {
-  grid-column: 1 / -1;
 }
 
 
