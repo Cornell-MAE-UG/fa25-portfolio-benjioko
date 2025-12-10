@@ -11,10 +11,14 @@ permalink: /projects/
     {% assign sorted_projects = site.projects | sort: "date" | reverse %}
     {% for project in sorted_projects %}
       <div class="gallery-item">
-        <a href="{{ project.redirect_to }}" target="_blank">
-          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" />
-          <p>{{ project.title}}</p>
-        </a>
+        {% if project.redirect_to %}
+          <a href="{{ project.redirect_to }}" target="_blank">
+        {% else %}
+          <a href="{{ project.url | relative_url }}">
+        {% endif %}
+            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" />
+            <p>{{ project.title}}</p>
+          </a>
       </div>
     {% endfor %}
 </div>
