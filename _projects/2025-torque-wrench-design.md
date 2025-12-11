@@ -4,6 +4,7 @@ title: Torque Wrench Design Project
 description: Mechanics of Materials Final Design Project iterating on and analyzing our Torque Wrench Design in Ansys.
 technologies: [Ansys, MATLAB, Fusion 360]
 image: /assets/images/materials_final/fillet_deflection.png
+project_type: coursework
 published: true
 ---
 **The Prompt**
