@@ -1,6 +1,6 @@
 ---
 layout: project
-title: North Star: Satellite Attitude Control
+title: North Star, Satellite Attitude Control
 description: This project explores the fundamentals of satellite attitude dynamics by modeling a 3-axis spacecraft in geostationary orbit and developing a closed-loop pointing controller.
 technologies: [MATLAB]
 image: assets/images/systems_final/definition.png
