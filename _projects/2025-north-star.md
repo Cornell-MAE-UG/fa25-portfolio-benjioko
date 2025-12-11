@@ -35,5 +35,3 @@ This simulation allowed us to validate controller performance across multiple ax
 
 **Report & Code**
 Feel free to view our project report [here!]({{ "/assets/images/systems_final/North_Star_Attitude_Control.pdf" | relative_url }})
-
-![Orbit Animation]({{ "/assets/images/systems_final/orbit_animation.gif" | relative_url }})
