@@ -175,7 +175,7 @@ footer {
 
 .gallery-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin: auto;
 }
 
@@ -186,17 +186,20 @@ footer {
   padding: 20px;
   margin: 0 auto;
   max-width: 100%;
+  justify-items: end;
 
   a {
     text-decoration: none;
     color: inherit;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     padding: 10px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: right;
+    height: 100%;
   }
 
   p {
@@ -205,11 +208,11 @@ footer {
     font-size: 1.1rem;
     line-height: 1.4;
     min-height: 3em;
-    text-align: center;
+    text-align: right;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     font-weight: 500;
   }
 
@@ -223,15 +226,16 @@ footer {
 
 .gallery-item {
   overflow: hidden;
-  text-align: center;
   transition: transform 0.3s ease;
-  max-width: 250px; 
-  max-height: 300px; 
+  max-width: 260px;
+  height: 320px;
+  display: flex;
+  width: 100%;
 }
 
 .gallery-item img {
   width: 100%;
-  height: 85%;
+  height: 180px;
   display: block;
   object-fit: cover;
   object-position: center;
@@ -343,5 +347,4 @@ img,
 .project-section {
   margin-bottom: 32px;
 }
-
 
