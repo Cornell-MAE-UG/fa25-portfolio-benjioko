@@ -102,51 +102,10 @@ footer {
 }
 
 .project-image {
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 320px;
-  width: 100%;
-}
-
-/* Project content container to scope image styles */
-.project-content {
-  clear: both;
-}
-
-/* Images inside project content: responsive and visually consistent */
-.project-content p img,
-.project-content img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 16px 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-}
-
-/* Row wrapper to place images side-by-side on wider screens */
-.image-row {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin: 16px 0;
-}
-.image-row img {
-  flex: 1 1 calc(50% - 8px);
-  max-width: calc(50% - 8px);
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Desktop: float main project image to the left for a two-column feel */
-@media (min-width: 900px) {
-  .project-image {
-    float: left;
-    margin: 20px 25px 25px 0;
-    width: 260px;
-    max-width: 260px;
-  }
+  float: left;
+  margin: 20px 25px 25px 0;
+  max-width: 200px;
+  vertical-align: top;
 }
 
 .inline-image {
@@ -175,67 +134,30 @@ footer {
 
 .gallery-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin: auto;
 }
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
   padding: 20px;
   margin: 0 auto;
   max-width: 100%;
-  justify-items: start;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 10px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
-    height: 100%;
-  }
-
-  p {
-    margin: 12px 0;
-    padding: 0 10px;
-    font-size: 1.1rem;
-    line-height: 1.4;
-    min-height: 3em;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-  }
-
-  img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
 }
 
 .gallery-item {
   overflow: hidden;
+  text-align: center;
   transition: transform 0.3s ease;
-  max-width: 260px;
-  height: 320px;
-  display: flex;
-  width: 100%;
+  max-width: 250px; 
+  max-height: 300px; 
 }
 
 .gallery-item img {
   width: 100%;
-  height: 180px;
+  height: 85%;
   display: block;
   object-fit: cover;
   object-position: center;
@@ -278,72 +200,3 @@ footer {
   transform: translateX(-4px);
 }
 
-
-
-
-/* Make all images responsive and prevent them from overflowing their containers */
-img,
-.project-image,
-.project-item img,
-.gallery-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  box-sizing: border-box;
-}
-
-/* Slightly constrain very large images inside project pages */
-.project-image {
-  max-width: 100%;
-  width: auto;
-}
-
-/* Styles for the new image include */
-.include-image-row {
-  margin: 18px 0;
-}
-.include-image-row .image-item {
-  margin: 0;
-}
-.include-image-row .image-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 6px 18px rgba(17,24,39,0.06);
-}
-.include-image-row figcaption {
-  font-size: 0.9rem;
-  color: $text-color;
-  margin-top: 8px;
-  text-align: center;
-}
-.image-comment {
-  margin-top: 8px;
-  font-size: 0.95rem;
-  color: $text-color;
-  opacity: 0.9;
-}
-
-/* Responsive YouTube embed */
-.video-embed {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
-  margin: 16px 0;
-}
-.video-embed iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(17,24,39,0.06);
-}
-
-/* Simple project-section placeholder (grouping removed) */
-.project-section {
-  margin-bottom: 32px;
-}
