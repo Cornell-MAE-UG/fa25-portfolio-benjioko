@@ -1,13 +1,12 @@
 ---
 layout: project
-title: North Star Attitude Control
+title: North Star: Satellite Attitude Control
 description: This project explores the fundamentals of satellite attitude dynamics by modeling a 3-axis spacecraft in geostationary orbit and developing a closed-loop pointing controller.
 technologies: [MATLAB]
 image: assets/images/systems_final/definition.png
 published: true
 ---
 
-**North Star — Satellite Attitude Dynamics & Pointing Control**
 ***Group Members***: Aloyse Maille, Olivia Lee, Ethan Kim
 
 Working with my team, I helped build the system definition, derive the nonlinear equations of motion, create the state-space model, and implement a full MATLAB simulation environment to study stability, performance requirements, and disturbance rejection of a space satellite.
@@ -37,4 +36,4 @@ This simulation allowed us to validate controller performance across multiple ax
 **Report & Code**
 Feel free to view our project report [here!]({{ "/assets/images/systems_final/North_Star_Attitude_Control.pdf" | relative_url }})
 
-![Orbit Animation]({{ "/assets/images/materials_final/sketch.jpeg" | relative_url }})
+![Orbit Animation]({{ "/assets/images/systems_final/orbit_animation.gif" | relative_url }})

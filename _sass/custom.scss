@@ -320,6 +320,25 @@ img,
   opacity: 0.9;
 }
 
+/* Responsive YouTube embed */
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 16px 0;
+}
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(17,24,39,0.06);
+}
+
 /* Simple project-section placeholder (grouping removed) */
 .project-section {
   margin-bottom: 32px;
