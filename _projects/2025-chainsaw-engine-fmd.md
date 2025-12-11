@@ -3,7 +3,7 @@ layout: project
 title: Chainsaw Engine Fluid Mechanical Dissection
 description: Chainsaw Engine Disscetion
 technologies: [SolidWorks, Machining]
-image: /assets/images/spaceship-design.jpg
+image: /assets/images/chainsaw_fmd.jpeg
 published: true
 ---
 ***Group Members***: Reggie Harris, Ben Brown, Shayla Reid, Davis Adams
