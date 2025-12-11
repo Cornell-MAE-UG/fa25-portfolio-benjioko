@@ -1,5 +1,20 @@
-<div class="video-embed">
-  <iframe src="https://www.youtube.com/embed/{{ include.id }}" title="{{ include.title | default: page.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{%- comment -%}
+YouTube include supports two modes:
 
-<!-- Usage: {% raw %}{% include youtube.html id="VIDEO_ID" title="Optional title" %}{% endraw %} -->
+- Responsive (default): omit width/height — iframe is wrapped in a 16:9 responsive container.
+- Fixed size: provide `width` and/or `height` to emit an iframe with those attributes.
+
+Usage examples:
+{% raw %}{% include youtube.html id="VIDEO_ID" title="Optional title" %}{% endraw %}
+{% raw %}{% include youtube.html id="VIDEO_ID" width="420" height="315" title="Optional title" %}{% endraw %}
+{%- endcomment -%}
+
+{%- assign src = "https://www.youtube.com/embed/" | append: include.id -%}
+
+{%- if include.width or include.height -%}
+  <iframe src="{{ src }}" title="{{ include.title | default: page.title }}" {% if include.width %}width="{{ include.width }}"{% endif %} {% if include.height %}height="{{ include.height }}"{% endif %} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{%- else -%}
+  <div class="video-embed">
+    <iframe src="{{ src }}" title="{{ include.title | default: page.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+{%- endif -%}
