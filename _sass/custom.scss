@@ -102,10 +102,13 @@ footer {
 }
 
 .project-image {
-  float: left;
-  margin: 20px 25px 25px 0;
-  max-width: 200px;
-  vertical-align: top;
+  /* Make front-matter/project header images responsive and prevent overflow */
+  float: none;
+  display: block;
+  margin: 20px auto 25px auto;
+  max-width: 640px;
+  width: 100%;
+  height: auto;
 }
 
 .inline-image {
@@ -212,13 +215,4 @@ footer {
 .back-arrow:hover {
   color: #3a3f58; 
   transform: translateX(-4px);
-}
-
-/* Keep project page images from overflowing the page */
-.project-content img {
-  width: 100%;
-  max-width: 900px;
-  height: auto;
-  display: block;
-  margin: 16px auto;
 }
