@@ -111,6 +111,14 @@ footer {
   height: auto;
 }
 
+.project-content img {
+  /* Keep markdown images responsive inside project pages */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
 .inline-image {
   max-width: 350px;
   margin: 0px 25px 15px 25px;
