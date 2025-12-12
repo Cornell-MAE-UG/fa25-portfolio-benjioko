@@ -213,3 +213,12 @@ footer {
   color: #3a3f58; 
   transform: translateX(-4px);
 }
+
+/* Keep project page images from overflowing the page */
+.project-content img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 16px auto;
+}
