@@ -11,4 +11,4 @@ The most valuable homework assignment for me in Heat Transfer was Problem Set 3.
 
 Diving deeper into the airplane wing question, I was able to draw out and analyze a thermal resistance network and compare the effects of a thermal barrier coating. I think this is useful to me as an aspiring mechanical design engineer in my iteration of different products and the trickle down effects of certain decisions. Learning how to model these effects will help me evaluate design trade-offs and make more informed decisions when iterating on future products.
 
-You can view my [homework here](/assets/Heat Transfer HW3.pdf) and the [problem statement here](/assets/Heat Transfer HW3 Problem Set.pdf).
+You can view my [homework here]({{ "assets/Heat Transfer HW3.pdf" | relative_url }}) and the [problem statement here]({{ "assets/Heat Transfer HW3 Problem Set.pdf" | relative_url }}).

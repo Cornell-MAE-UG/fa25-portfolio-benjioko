@@ -15,4 +15,4 @@ Mechanically, our robot used a lightweight laser-cut body with a cardboard shell
 
 Throughout the project, our team progressed through the required milestones by first proving basic mobility, then adding sensing and border detection, and finally testing cube collection. The main challenge was tuning the QTI sensors consistently across different fields and lighting conditions. During competition, the robot performed better than expected, winning its first two matches largely because of its sturdy structure. However, later matches revealed weaknesses in sensor consistency and battery-dependent motion control. Overall, the project showed the importance of balancing mechanical robustness, sensor reliability, and repeated testing under realistic competition conditions.
 
-You can view the [project report here](/assets/Heat Transfer HW3.pdf)!
+You can view the [project report here]({{ "assets/Mechatronics Robot Competition Final Report.pdf" | relative_url }})!
